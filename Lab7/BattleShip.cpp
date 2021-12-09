@@ -31,7 +31,7 @@ void BattleShip::StartNewGame(){
 	}
 }
 
-void BattleShip::getSetupGrid() { // his was changed in git hub
+void BattleShip::getSetupGrid() { 
 	int a[10];
 	a[0] = 1;
 	for (int i = 1; i < 10; i++) {
@@ -50,7 +50,7 @@ void BattleShip::getSetupGrid() { // his was changed in git hub
 	}
 }
 
-void BattleShip::getAttackGrid() { //this was changed in git hub couldnt figure out how to update the code
+void BattleShip::getAttackGrid() {
 	int a[10];
 	a[0] = 1;
 	for (int i = 1; i < 10; i++) {
