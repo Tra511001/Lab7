@@ -32,7 +32,17 @@ void BattleShip::StartNewGame(){
 }
 
 void BattleShip::getSetupGrid() {
+	int a[10];
+	a[0] = 1;
+	for (int i = 1; i < 10; i++) {
+		a[i] = i + 1;
+	}
+	cout << "  1 2 3 4 5 6 7 8 9 10" << endl;
 	for (int row = 0; row < 10; row++) {
+		if (row != 9)
+			cout << a[row] << "  ";
+		else
+			cout << a[row] << " ";
 		for (int col = 0; col < 10; col++) {
 			cout << setupArr[row][col] << " ";
 		}
@@ -41,9 +51,19 @@ void BattleShip::getSetupGrid() {
 }
 
 void BattleShip::getAttackGrid() {
+	int a[10];
+	a[0] = 1;
+	for (int i = 1; i < 10; i++) {
+		a[i] = i + 1;
+	}
+	cout << "  1 2 3 4 5 6 7 8 9 10" << endl;
 	for (int row = 0; row < 10; row++) {
+		if (row != 9)
+			cout << a[row] << "  ";
+		else
+			cout << a[row] << " ";
 		for (int col = 0; col < 10; col++) {
-			cout << attackArr[row][col] << " ";
+			cout << setupArr[row][col] << " ";
 		}
 		cout << endl;
 	}
